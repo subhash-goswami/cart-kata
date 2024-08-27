@@ -1,0 +1,14 @@
+services:
+  web:
+    image: cart-kata:latest
+    container_name: cart-kata_web
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DJANGO_SUPERUSER_USERNAME=admin
+      - DJANGO_SUPERUSER_PASSWORD=admin
