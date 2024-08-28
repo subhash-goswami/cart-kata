@@ -23,7 +23,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Supermarket Checkout</h1>
+      <h1>Checkout Kata</h1>
       <div>
         <label htmlFor="items-input">Enter items: </label>
         <input
